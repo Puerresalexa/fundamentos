@@ -6,7 +6,6 @@ form.addEventListener("submit", (i)=>{
     const contacto={
         nombre:document.getElementById('nombre').value.trim(),
         correo:document.getElementById('correo').value.trim(),
-        celular:document.getElementById('celular').value.trim(),
         mensaje:document.getElementById('mensaje').value.trim(),
     }
 
