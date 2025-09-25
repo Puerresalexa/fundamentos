@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cuerpo-game{
+    font-family:monospace;
+    background: black;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+     justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container{
+    max-width: 100%;
+    
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.game-header{
+    padding: 20px;
+    text-align: center;
+    background-color: #5483b3;
+}
+
+.game-header h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 6px white;
+}
+
+.score-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.score-item{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #5483b3;
+    backdrop-filter: blur(10px);
+}
+
+.score-label{
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+
+.score-value{
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+
+.category-selector{
+    padding: 25px;
+    text-align: center;
+    background-color: #5483b3;
+}
+
+.category-selector h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.category-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.game-area{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+    background: #5483b3;
+}
+
+.word-info{
+    text-align: center;
+}
+
+.current-category{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+.word-display{
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.hangman-container{
+    text-align: center;
+}
+
+#hangmanSvg{
+    border-radius: 15px; 
+    margin-bottom: 15px;
+}
+
+.attempts-counter{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.game-controls{
+    padding: 30px;
+    background-color:   #5483b3;
+}
+
+.hint-area{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hint-button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background:  #5483b3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3seg ease;
+    font-size: 1.1em;
+}
+
+.hint-button:hover:not(:disabled){
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 15px white;
+}
+
+.hint-button:disabled{
+    background-color: #5483b3;
+    cursor: not-allowed;
+}
+
+.hint-display{
+    margin-top: 15px;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 1.1em;
+    display: none;
+}
+
+.hint-display.show{
+    display: block;
+    animation: slideDown 0.3 ease;
+}
+
+.keyboard{
+    margin-bottom: 25px;
+}
+
+.keyboard-row{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.key{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.key:hover{
+    background:  #5483b3;
+    border-color: white;
+    color: white;
+    transform: scale(1.05);
+}  
+
+.action-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.action-button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color:  #5483b3;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 140px;
+}
+
+.action-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px white;
+}
+
+.action-button.secondary{
+    background-color: #5483b3;
+}
+
+.action-button.secondary:hover{
+    box-shadow: 0 5px 15px   #5483b3;
+}
+
+.modal{
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: (0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: faseIn 0.3s ease;
+}
+
+.modal-content{
+    background: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 5px 30px white;
+    animation: slideUp 0.3s ease;
+}
+
+.resulttitle{
+    margin-bottom: 15px;
+}
+
+.result-stats{
+    margin: 20px 0;
+    padding: 15px;
+    background: rgb(19, 17, 17);
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+.stats-container{
+    padding: 30px;
+    background-color: #5483b3;
+}
+
+.title-stats{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.category-stats{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}

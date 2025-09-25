@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Prop+Double:wght@100..900&family=Chela+One&family=Creepster&family=Press+Start+2P&family=Protest+Revolution&family=Reenie+Beanie&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Protest+Revolution&family=Reenie+Beanie&family=Rubik+Glitch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  color: #c0c0c0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+   
+
+}
+.calculator {
+    width: 250px;
+    border: 2px solid black;
+    background-image: url(../images/fondo\ \(3\).jpeg);
+    background-size: 4px 4px;
+    padding: 10px;
+    background-size: cover;
+    min-height: 10vh;
+    
+}
+
+.hheader {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+
+.display {
+    background-color: #ffffff;
+    border: 2px solid black;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    background-color: #e0e0e0;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+button:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+#equals-large {
+    grid-row: span 2;
+    grid-column: 4;
+    padding: 0;
+    height: 100%;
+}

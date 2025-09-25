@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Carter+One&family=Henny+Penny&family=Manufacturing+Consent&family=Merienda:wght@300&family=Monoton&family=Mrs+Saint+Delafield&family=Rye&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Protest+Revolution&family=Reenie+Beanie&family=Rubik+Glitch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  background-color: #1a1a1a;
+  color: #c0c0c0;
+  font-family: sans-serif;
+
+}
+
+
+
+
+main {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  padding: 20px ;
+  
+}
+
+.columnas {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imagen {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: rotate(-5deg);
+}
+
+.imagenuno {
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.columnasdos {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inicio h1 {
+  font-size: 2.5em;
+  color: #4a6fa5;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inicio h2 {
+  font-size: 1.5em;
+  color: #f7d162;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inicio p {
+  font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.herra h3 {
+  font-size: 1.2em;
+  background-color: #d1e1f1;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  color: #333;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.contorno {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section {
+  padding: 20px;
+}
+
+
+.titulo {
+  font-size: 2em;
+  font-weight: bold;
+  position: relative;
+  background-color:#5483b3;
+  color:#d1e1f1 ;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  transform: rotate(-3deg);
+  display: inline-block;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.texto .columna {
+  display: flex;
+  gap: 40px;
+}
+
+.texto {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+}
+
